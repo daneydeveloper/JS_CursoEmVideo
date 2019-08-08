@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: blueviolet;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Rodando..
+    </div>
+</body>
+    <script>
+        var texto = document.getElementById('area')
+        texto.addEventListener('click', clicar)
+        texto.addEventListener('mouseenter', entrar)
+        texto.addEventListener('mousemove', mover)
+        texto.addEventListener('mouseout', sair)
+        texto.addEventListener('mousedown', segurar)
+
+        function entrar(){
+            texto.innerText = 'Entrou'
+        }
+        function clicar(){
+            texto.innerText = 'Clicou!'
+        }
+
+        function mover(){
+            texto.innerText = 'Está movendo..'
+        }
+
+        function sair(){
+            texto.innerText = 'Saiu'
+        }
+        
+        function segurar(){
+            texto.innerText = 'Segurando'
+        }
+
+    </script>
+</html>

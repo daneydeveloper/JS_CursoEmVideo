@@ -1,0 +1,28 @@
+- window.confirm('msg'): popup com ok ou cancela
+- window.prompt('msn'): popup para entrada de dados 
+
+- String to Number (float or int):
+	- Number(string)
+
+- Number to String:
+	- String(number)
+	- number.toString()
+
+- forma facil print:
+	- window.alert(`bla bla bla ${variavel}`)
+
+* Manipulação de String:
+
+	- Fomatar em real:
+		- number.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+	- Substituir um char por outro:
+		- string.replace('quem quero trocar', 'novo char')
+
+*pegar elemento:
+	- var p1 = window.document.getElementsByTagName('p')[0] //pegar o elemento que está no primeiro <p></p> do HTML
+	- var p3 = window.document.getElementsByName('name')
+	- var p2 = window.document.getElementById('id')
+
+	*- var p4 = window.document.querySelector('div#msg') //div->id (#)
+	*- var p4 = window.document.querySelector('div.msg') //div->class (.)
